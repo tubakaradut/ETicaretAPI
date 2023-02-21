@@ -1,0 +1,1731 @@
+2023-02-12 21:53:19.966 +03:00 [INF] User profile is available. Using 'C:\Users\Tuba\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-12 21:53:21.282 +03:00 [INF] Now listening on: http://localhost:7178
+2023-02-12 21:53:21.296 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-12 21:53:21.299 +03:00 [INF] Hosting environment: Development
+2023-02-12 21:53:21.301 +03:00 [INF] Content root path: C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\
+2023-02-12 21:53:21.862 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/index.html - -
+2023-02-12 21:53:23.945 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/index.html - - - 200 - text/html;charset=utf-8 2087.0793ms
+2023-02-12 21:53:24.685 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - -
+2023-02-12 21:53:24.695 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 9.4086ms
+2023-02-12 21:53:25.646 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_vs/browserLink - -
+2023-02-12 21:53:25.736 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 89.9738ms
+2023-02-12 21:53:26.659 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - -
+2023-02-12 21:53:27.021 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 361.5674ms
+2023-02-12 23:05:58.015 +03:00 [INF] User profile is available. Using 'C:\Users\Tuba\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-12 23:05:58.929 +03:00 [INF] Now listening on: http://localhost:7178
+2023-02-12 23:05:58.937 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-12 23:05:58.939 +03:00 [INF] Hosting environment: Development
+2023-02-12 23:05:58.946 +03:00 [INF] Content root path: C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\
+2023-02-12 23:05:59.899 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/index.html - -
+2023-02-12 23:06:02.938 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/index.html - - - 200 - text/html;charset=utf-8 3036.6598ms
+2023-02-12 23:06:03.050 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - -
+2023-02-12 23:06:03.120 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 70.8281ms
+2023-02-12 23:06:03.160 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_vs/browserLink - -
+2023-02-12 23:06:03.360 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 200.0472ms
+2023-02-12 23:06:03.640 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - -
+2023-02-12 23:06:04.292 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 652.2948ms
+2023-02-12 23:06:35.608 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7178/api/Auth/Login application/json 53
+2023-02-12 23:06:35.624 +03:00 [INF] CORS policy execution failed.
+2023-02-12 23:06:35.626 +03:00 [INF] Request origin http://localhost:7178 does not have permission to access the resource.
+2023-02-12 23:06:35.640 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-02-12 23:06:35.687 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-02-12 23:06:35.764 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandRequest) on controller ETicaretAPI.API.Controllers.AuthController (ETicaretAPI.API).
+2023-02-12 23:06:39.526 +03:00 [INF] Executed DbCommand (73ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-02-12 23:06:40.295 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-02-12 23:06:40.610 +03:00 [INF] Executed DbCommand (34ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2023-02-12 23:06:43.738 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandResponse'.
+2023-02-12 23:06:43.780 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API) in 8005.9484ms
+2023-02-12 23:06:43.786 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-02-12 23:06:43.834 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7178/api/Auth/Login application/json 53 - 200 - application/json;+charset=utf-8 8226.5539ms
+2023-02-12 23:17:50.959 +03:00 [INF] Executed DbCommand (979ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE DATABASE "ETicaretAPIDb";
+2023-02-12 23:17:51.375 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2023-02-12 23:17:51.502 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-12 23:17:51.508 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-02-12 23:17:51.541 +03:00 [INF] Applying migration '20230207141454_mig1'.
+2023-02-12 23:17:51.617 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230207141454_mig1', '7.0.2');
+2023-02-12 23:17:51.629 +03:00 [INF] Applying migration '20230208153449_mig3'.
+2023-02-12 23:17:51.665 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230208153449_mig3', '7.0.2');
+2023-02-12 23:17:51.666 +03:00 [INF] Applying migration '20230211141523_mig10'.
+2023-02-12 23:17:51.800 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetRoles" (
+    "Id" text NOT NULL,
+    "Name" character varying(256) NULL,
+    "NormalizedName" character varying(256) NULL,
+    "ConcurrencyStamp" text NULL,
+    CONSTRAINT "PK_AspNetRoles" PRIMARY KEY ("Id")
+);
+2023-02-12 23:17:51.810 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUsers" (
+    "Id" text NOT NULL,
+    "NameSurname" text NOT NULL,
+    "RefreshToken" text NULL,
+    "RefreshTokenEndDate" timestamp with time zone NULL,
+    "UserName" character varying(256) NULL,
+    "NormalizedUserName" character varying(256) NULL,
+    "Email" character varying(256) NULL,
+    "NormalizedEmail" character varying(256) NULL,
+    "EmailConfirmed" boolean NOT NULL,
+    "PasswordHash" text NULL,
+    "SecurityStamp" text NULL,
+    "ConcurrencyStamp" text NULL,
+    "PhoneNumber" text NULL,
+    "PhoneNumberConfirmed" boolean NOT NULL,
+    "TwoFactorEnabled" boolean NOT NULL,
+    "LockoutEnd" timestamp with time zone NULL,
+    "LockoutEnabled" boolean NOT NULL,
+    "AccessFailedCount" integer NOT NULL,
+    CONSTRAINT "PK_AspNetUsers" PRIMARY KEY ("Id")
+);
+2023-02-12 23:17:51.828 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetRoleClaims" (
+    "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+    "RoleId" text NOT NULL,
+    "ClaimType" text NULL,
+    "ClaimValue" text NULL,
+    CONSTRAINT "PK_AspNetRoleClaims" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_AspNetRoleClaims_AspNetRoles_RoleId" FOREIGN KEY ("RoleId") REFERENCES "AspNetRoles" ("Id") ON DELETE CASCADE
+);
+2023-02-12 23:17:51.838 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserClaims" (
+    "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+    "UserId" text NOT NULL,
+    "ClaimType" text NULL,
+    "ClaimValue" text NULL,
+    CONSTRAINT "PK_AspNetUserClaims" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_AspNetUserClaims_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2023-02-12 23:17:51.847 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserLogins" (
+    "LoginProvider" text NOT NULL,
+    "ProviderKey" text NOT NULL,
+    "ProviderDisplayName" text NULL,
+    "UserId" text NOT NULL,
+    CONSTRAINT "PK_AspNetUserLogins" PRIMARY KEY ("LoginProvider", "ProviderKey"),
+    CONSTRAINT "FK_AspNetUserLogins_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2023-02-12 23:17:51.858 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserRoles" (
+    "UserId" text NOT NULL,
+    "RoleId" text NOT NULL,
+    CONSTRAINT "PK_AspNetUserRoles" PRIMARY KEY ("UserId", "RoleId"),
+    CONSTRAINT "FK_AspNetUserRoles_AspNetRoles_RoleId" FOREIGN KEY ("RoleId") REFERENCES "AspNetRoles" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_AspNetUserRoles_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2023-02-12 23:17:51.867 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserTokens" (
+    "UserId" text NOT NULL,
+    "LoginProvider" text NOT NULL,
+    "Name" text NOT NULL,
+    "Value" text NULL,
+    CONSTRAINT "PK_AspNetUserTokens" PRIMARY KEY ("UserId", "LoginProvider", "Name"),
+    CONSTRAINT "FK_AspNetUserTokens_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2023-02-12 23:17:51.872 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetRoleClaims_RoleId" ON "AspNetRoleClaims" ("RoleId");
+2023-02-12 23:17:51.923 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "RoleNameIndex" ON "AspNetRoles" ("NormalizedName");
+2023-02-12 23:17:51.929 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetUserClaims_UserId" ON "AspNetUserClaims" ("UserId");
+2023-02-12 23:17:51.932 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetUserLogins_UserId" ON "AspNetUserLogins" ("UserId");
+2023-02-12 23:17:51.937 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetUserRoles_RoleId" ON "AspNetUserRoles" ("RoleId");
+2023-02-12 23:17:51.941 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "EmailIndex" ON "AspNetUsers" ("NormalizedEmail");
+2023-02-12 23:17:51.944 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "UserNameIndex" ON "AspNetUsers" ("NormalizedUserName");
+2023-02-12 23:17:51.945 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230211141523_mig10', '7.0.2');
+2023-02-12 23:17:51.946 +03:00 [INF] Applying migration '20230212201733_mig2'.
+2023-02-12 23:17:52.036 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230212201733_mig2', '7.0.2');
+2023-02-12 23:41:01.076 +03:00 [INF] Executed DbCommand (951ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE DATABASE "ETicaretAPIDb";
+2023-02-12 23:41:01.381 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2023-02-12 23:41:01.497 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-12 23:41:01.503 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-02-12 23:41:01.551 +03:00 [INF] Applying migration '20230212204039_mig1'.
+2023-02-12 23:41:01.700 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetRoles" (
+    "Id" text NOT NULL,
+    "Name" character varying(256) NULL,
+    "NormalizedName" character varying(256) NULL,
+    "ConcurrencyStamp" text NULL,
+    CONSTRAINT "PK_AspNetRoles" PRIMARY KEY ("Id")
+);
+2023-02-12 23:41:01.711 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUsers" (
+    "Id" text NOT NULL,
+    "NameSurname" text NOT NULL,
+    "RefreshToken" text NULL,
+    "RefreshTokenEndDate" timestamp with time zone NULL,
+    "UserName" character varying(256) NULL,
+    "NormalizedUserName" character varying(256) NULL,
+    "Email" character varying(256) NULL,
+    "NormalizedEmail" character varying(256) NULL,
+    "EmailConfirmed" boolean NOT NULL,
+    "PasswordHash" text NULL,
+    "SecurityStamp" text NULL,
+    "ConcurrencyStamp" text NULL,
+    "PhoneNumber" text NULL,
+    "PhoneNumberConfirmed" boolean NOT NULL,
+    "TwoFactorEnabled" boolean NOT NULL,
+    "LockoutEnd" timestamp with time zone NULL,
+    "LockoutEnabled" boolean NOT NULL,
+    "AccessFailedCount" integer NOT NULL,
+    CONSTRAINT "PK_AspNetUsers" PRIMARY KEY ("Id")
+);
+2023-02-12 23:41:01.724 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Customers" (
+    "Id" uuid NOT NULL,
+    "CustomerName" text NOT NULL,
+    "CreatedDate" timestamp with time zone NOT NULL,
+    "UpdatedDate" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_Customers" PRIMARY KEY ("Id")
+);
+2023-02-12 23:41:01.735 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Products" (
+    "Id" uuid NOT NULL,
+    "ProductName" text NOT NULL,
+    "Stock" integer NOT NULL,
+    "Price" real NOT NULL,
+    "CreatedDate" timestamp with time zone NOT NULL,
+    "UpdatedDate" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_Products" PRIMARY KEY ("Id")
+);
+2023-02-12 23:41:01.759 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetRoleClaims" (
+    "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+    "RoleId" text NOT NULL,
+    "ClaimType" text NULL,
+    "ClaimValue" text NULL,
+    CONSTRAINT "PK_AspNetRoleClaims" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_AspNetRoleClaims_AspNetRoles_RoleId" FOREIGN KEY ("RoleId") REFERENCES "AspNetRoles" ("Id") ON DELETE CASCADE
+);
+2023-02-12 23:41:01.774 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserClaims" (
+    "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+    "UserId" text NOT NULL,
+    "ClaimType" text NULL,
+    "ClaimValue" text NULL,
+    CONSTRAINT "PK_AspNetUserClaims" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_AspNetUserClaims_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2023-02-12 23:41:01.785 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserLogins" (
+    "LoginProvider" text NOT NULL,
+    "ProviderKey" text NOT NULL,
+    "ProviderDisplayName" text NULL,
+    "UserId" text NOT NULL,
+    CONSTRAINT "PK_AspNetUserLogins" PRIMARY KEY ("LoginProvider", "ProviderKey"),
+    CONSTRAINT "FK_AspNetUserLogins_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2023-02-12 23:41:01.798 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserRoles" (
+    "UserId" text NOT NULL,
+    "RoleId" text NOT NULL,
+    CONSTRAINT "PK_AspNetUserRoles" PRIMARY KEY ("UserId", "RoleId"),
+    CONSTRAINT "FK_AspNetUserRoles_AspNetRoles_RoleId" FOREIGN KEY ("RoleId") REFERENCES "AspNetRoles" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_AspNetUserRoles_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2023-02-12 23:41:01.810 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserTokens" (
+    "UserId" text NOT NULL,
+    "LoginProvider" text NOT NULL,
+    "Name" text NOT NULL,
+    "Value" text NULL,
+    CONSTRAINT "PK_AspNetUserTokens" PRIMARY KEY ("UserId", "LoginProvider", "Name"),
+    CONSTRAINT "FK_AspNetUserTokens_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2023-02-12 23:41:01.822 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Orders" (
+    "Id" uuid NOT NULL,
+    "Description" text NOT NULL,
+    "Address" text NOT NULL,
+    "OrderCode" text NOT NULL,
+    "CustomerId" uuid NOT NULL,
+    "CreatedDate" timestamp with time zone NOT NULL,
+    "UpdatedDate" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_Orders" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_Orders_Customers_CustomerId" FOREIGN KEY ("CustomerId") REFERENCES "Customers" ("Id") ON DELETE CASCADE
+);
+2023-02-12 23:41:01.832 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "OrderProduct" (
+    "OrdersId" uuid NOT NULL,
+    "ProductsId" uuid NOT NULL,
+    CONSTRAINT "PK_OrderProduct" PRIMARY KEY ("OrdersId", "ProductsId"),
+    CONSTRAINT "FK_OrderProduct_Orders_OrdersId" FOREIGN KEY ("OrdersId") REFERENCES "Orders" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_OrderProduct_Products_ProductsId" FOREIGN KEY ("ProductsId") REFERENCES "Products" ("Id") ON DELETE CASCADE
+);
+2023-02-12 23:41:01.841 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetRoleClaims_RoleId" ON "AspNetRoleClaims" ("RoleId");
+2023-02-12 23:41:01.846 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "RoleNameIndex" ON "AspNetRoles" ("NormalizedName");
+2023-02-12 23:41:01.850 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetUserClaims_UserId" ON "AspNetUserClaims" ("UserId");
+2023-02-12 23:41:01.855 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetUserLogins_UserId" ON "AspNetUserLogins" ("UserId");
+2023-02-12 23:41:02.075 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetUserRoles_RoleId" ON "AspNetUserRoles" ("RoleId");
+2023-02-12 23:41:02.081 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "EmailIndex" ON "AspNetUsers" ("NormalizedEmail");
+2023-02-12 23:41:02.087 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "UserNameIndex" ON "AspNetUsers" ("NormalizedUserName");
+2023-02-12 23:41:02.092 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_OrderProduct_ProductsId" ON "OrderProduct" ("ProductsId");
+2023-02-12 23:41:02.098 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Orders_CustomerId" ON "Orders" ("CustomerId");
+2023-02-12 23:41:02.102 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230212204039_mig1', '7.0.2');
+2023-02-13 02:48:41.108 +03:00 [INF] User profile is available. Using 'C:\Users\Tuba\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-13 02:48:41.940 +03:00 [INF] Now listening on: http://localhost:7178
+2023-02-13 02:48:42.075 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-13 02:48:42.136 +03:00 [INF] Hosting environment: Development
+2023-02-13 02:48:42.138 +03:00 [INF] Content root path: C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\
+2023-02-13 02:48:44.645 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/index.html - -
+2023-02-13 02:48:48.770 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_vs/browserLink - -
+2023-02-13 02:48:48.933 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/index.html - - - 200 - text/html;charset=utf-8 4105.5509ms
+2023-02-13 02:48:49.394 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - -
+2023-02-13 02:48:49.471 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 76.4912ms
+2023-02-13 02:48:49.512 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 742.1500ms
+2023-02-13 02:48:49.714 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - -
+2023-02-13 02:48:49.863 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - ETicaretAPI.API.Controllers.ApplicationServicesController.GetAuthorizeDefinitionEndpoints (ETicaretAPI.API). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-02-13 02:48:50.186 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 472.3793ms
+2023-02-13 02:50:39.550 +03:00 [INF] User profile is available. Using 'C:\Users\Tuba\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-13 02:50:40.288 +03:00 [INF] Now listening on: http://localhost:7178
+2023-02-13 02:50:40.334 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-13 02:50:40.337 +03:00 [INF] Hosting environment: Development
+2023-02-13 02:50:40.338 +03:00 [INF] Content root path: C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\
+2023-02-13 02:50:41.402 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/index.html - -
+2023-02-13 02:50:43.167 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/index.html - - - 200 - text/html;charset=utf-8 1767.8204ms
+2023-02-13 02:50:43.443 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - -
+2023-02-13 02:50:43.466 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_vs/browserLink - -
+2023-02-13 02:50:43.474 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 30.8024ms
+2023-02-13 02:50:43.657 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 190.7357ms
+2023-02-13 02:50:43.898 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - -
+2023-02-13 02:50:44.110 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - ETicaretAPI.API.Controllers.ApplicationServicesController.GetAuthorizeDefinitionEndpoints (ETicaretAPI.API). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-02-13 02:50:44.319 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 420.8116ms
+2023-02-13 02:51:53.312 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - -
+2023-02-13 02:51:53.461 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - ETicaretAPI.API.Controllers.ApplicationServicesController.GetAuthorizeDefinitionEndpoints (ETicaretAPI.API). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-02-13 02:51:53.611 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - - - 500 - text/html;+charset=utf-8 298.8151ms
+2023-02-13 02:51:53.652 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - -
+2023-02-13 02:51:53.659 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_vs/browserLink - -
+2023-02-13 02:51:53.662 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 9.7362ms
+2023-02-13 02:51:53.718 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 59.7870ms
+2023-02-13 02:51:54.059 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/favicon.ico - -
+2023-02-13 02:51:54.084 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /favicon.ico
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:7178
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Referer: [Redacted]
+sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2023-02-13 02:51:54.092 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-02-13 02:51:54.135 +03:00 [INF] Response:
+StatusCode: 404
+2023-02-13 02:51:54.143 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/favicon.ico - - - 404 0 - 83.9510ms
+2023-02-13 02:53:02.043 +03:00 [INF] User profile is available. Using 'C:\Users\Tuba\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-13 02:53:02.758 +03:00 [INF] Now listening on: http://localhost:7178
+2023-02-13 02:53:02.788 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-13 02:53:02.792 +03:00 [INF] Hosting environment: Development
+2023-02-13 02:53:02.796 +03:00 [INF] Content root path: C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\
+2023-02-13 02:53:03.280 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/index.html - -
+2023-02-13 02:53:04.819 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/index.html - - - 200 - text/html;charset=utf-8 1554.7028ms
+2023-02-13 02:53:04.893 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - -
+2023-02-13 02:53:04.932 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 38.9337ms
+2023-02-13 02:53:04.950 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_vs/browserLink - -
+2023-02-13 02:53:05.171 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 221.3033ms
+2023-02-13 02:53:05.345 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - -
+2023-02-13 02:53:05.935 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 589.8496ms
+2023-02-13 02:54:52.911 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/api/applicationservices application/x-www-form-urlencoded 61
+2023-02-13 02:54:52.938 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/applicationservices
+Accept: */*
+Connection: keep-alive
+Host: localhost:7178
+User-Agent: PostmanRuntime/7.30.1
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 61
+Postman-Token: [Redacted]
+2023-02-13 02:54:52.951 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-02-13 02:54:52.996 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ApplicationServicesController.GetAuthorizeDefinitionEndpoints (ETicaretAPI.API)'
+2023-02-13 02:54:53.048 +03:00 [INF] Route matched with {action = "GetAuthorizeDefinitionEndpoints", controller = "ApplicationServices"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAuthorizeDefinitionEndpoints() on controller ETicaretAPI.API.Controllers.ApplicationServicesController (ETicaretAPI.API).
+2023-02-13 02:59:11.339 +03:00 [INF] User profile is available. Using 'C:\Users\Tuba\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-13 02:59:11.843 +03:00 [INF] Now listening on: http://localhost:7178
+2023-02-13 02:59:11.868 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-13 02:59:11.882 +03:00 [INF] Hosting environment: Development
+2023-02-13 02:59:11.883 +03:00 [INF] Content root path: C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\
+2023-02-13 02:59:12.771 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/index.html - -
+2023-02-13 02:59:14.329 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/index.html - - - 200 - text/html;charset=utf-8 1565.7079ms
+2023-02-13 02:59:14.407 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - -
+2023-02-13 02:59:14.455 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 47.9425ms
+2023-02-13 02:59:14.465 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_vs/browserLink - -
+2023-02-13 02:59:14.603 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 138.0503ms
+2023-02-13 02:59:14.907 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - -
+2023-02-13 02:59:15.375 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 468.2932ms
+2023-02-13 02:59:22.298 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/api/applicationservices application/x-www-form-urlencoded 61
+2023-02-13 02:59:22.329 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/applicationservices
+Accept: */*
+Connection: keep-alive
+Host: localhost:7178
+User-Agent: PostmanRuntime/7.30.1
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 61
+Postman-Token: [Redacted]
+2023-02-13 02:59:22.346 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-02-13 02:59:22.385 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ApplicationServicesController.GetAuthorizeDefinitionEndpoints (ETicaretAPI.API)'
+2023-02-13 02:59:22.426 +03:00 [INF] Route matched with {action = "GetAuthorizeDefinitionEndpoints", controller = "ApplicationServices"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAuthorizeDefinitionEndpoints() on controller ETicaretAPI.API.Controllers.ApplicationServicesController (ETicaretAPI.API).
+2023-02-13 03:38:51.491 +03:00 [INF] User profile is available. Using 'C:\Users\Tuba\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-13 03:38:52.350 +03:00 [INF] Now listening on: http://localhost:7178
+2023-02-13 03:38:52.380 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-13 03:38:52.439 +03:00 [INF] Hosting environment: Development
+2023-02-13 03:38:53.606 +03:00 [INF] Content root path: C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\
+2023-02-13 03:38:53.690 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/index.html - -
+2023-02-13 03:38:56.608 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/index.html - - - 200 - text/html;charset=utf-8 2926.2707ms
+2023-02-13 03:38:56.853 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - -
+2023-02-13 03:38:56.870 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 17.1615ms
+2023-02-13 03:38:58.032 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_vs/browserLink - -
+2023-02-13 03:38:58.197 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 165.3682ms
+2023-02-13 03:38:58.508 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - -
+2023-02-13 03:38:58.980 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 471.4397ms
+2023-02-13 03:39:06.313 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/api/applicationservices application/x-www-form-urlencoded 61
+2023-02-13 03:39:06.343 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/applicationservices
+Accept: */*
+Connection: keep-alive
+Host: localhost:7178
+User-Agent: PostmanRuntime/7.30.1
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 61
+Postman-Token: [Redacted]
+2023-02-13 03:39:06.357 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-02-13 03:39:06.409 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ApplicationServicesController.GetAuthorizeDefinitionEndpoints (ETicaretAPI.API)'
+2023-02-13 03:39:06.460 +03:00 [INF] Route matched with {action = "GetAuthorizeDefinitionEndpoints", controller = "ApplicationServices"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAuthorizeDefinitionEndpoints() on controller ETicaretAPI.API.Controllers.ApplicationServicesController (ETicaretAPI.API).
+2023-02-13 03:40:04.042 +03:00 [INF] User profile is available. Using 'C:\Users\Tuba\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-13 03:40:04.848 +03:00 [INF] Now listening on: http://localhost:7178
+2023-02-13 03:40:04.907 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-13 03:40:04.917 +03:00 [INF] Hosting environment: Development
+2023-02-13 03:40:04.928 +03:00 [INF] Content root path: C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\
+2023-02-13 03:40:05.864 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/index.html - -
+2023-02-13 03:40:08.230 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/index.html - - - 200 - text/html;charset=utf-8 2373.2466ms
+2023-02-13 03:40:08.389 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - -
+2023-02-13 03:40:08.419 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_vs/browserLink - -
+2023-02-13 03:40:08.437 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 48.0890ms
+2023-02-13 03:40:08.654 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 235.1557ms
+2023-02-13 03:40:10.968 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - -
+2023-02-13 03:40:11.490 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 522.1662ms
+2023-02-13 03:40:14.617 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/api/applicationservices application/x-www-form-urlencoded 61
+2023-02-13 03:40:14.638 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/applicationservices
+Accept: */*
+Connection: keep-alive
+Host: localhost:7178
+User-Agent: PostmanRuntime/7.30.1
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 61
+Postman-Token: [Redacted]
+2023-02-13 03:40:14.650 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-02-13 03:40:14.693 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ApplicationServicesController.GetAuthorizeDefinitionEndpoints (ETicaretAPI.API)'
+2023-02-13 03:40:14.736 +03:00 [INF] Route matched with {action = "GetAuthorizeDefinitionEndpoints", controller = "ApplicationServices"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAuthorizeDefinitionEndpoints() on controller ETicaretAPI.API.Controllers.ApplicationServicesController (ETicaretAPI.API).
+2023-02-13 03:42:13.208 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ETicaretAPI.Application.DTOs.Configuration.Menu, ETicaretAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-02-13 03:42:13.252 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-13 03:42:13.272 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ApplicationServicesController.GetAuthorizeDefinitionEndpoints (ETicaretAPI.API) in 118516.5336ms
+2023-02-13 03:42:13.283 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ApplicationServicesController.GetAuthorizeDefinitionEndpoints (ETicaretAPI.API)'
+2023-02-13 03:42:13.295 +03:00 [INF] ResponseBody: [{"name":"Products","actions":[{"actionType":1,"httpType":"POST","definition":"Create Product"},{"actionType":2,"httpType":"PUT","definition":"Update Product"},{"actionType":3,"httpType":"DELETE","definition":"Delete Product"}]}]
+2023-02-13 03:42:13.305 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/api/applicationservices application/x-www-form-urlencoded 61 - 200 - application/json;+charset=utf-8 118687.9894ms
+2023-02-13 03:49:30.289 +03:00 [INF] User profile is available. Using 'C:\Users\Tuba\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-13 03:49:30.928 +03:00 [INF] Now listening on: http://localhost:7178
+2023-02-13 03:49:30.984 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-13 03:49:30.988 +03:00 [INF] Hosting environment: Development
+2023-02-13 03:49:30.992 +03:00 [INF] Content root path: C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\
+2023-02-13 03:49:32.130 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/index.html - -
+2023-02-13 03:49:34.187 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/index.html - - - 200 - text/html;charset=utf-8 2066.6048ms
+2023-02-13 03:49:34.685 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - -
+2023-02-13 03:49:34.715 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 30.1987ms
+2023-02-13 03:49:36.864 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_vs/browserLink - -
+2023-02-13 03:49:36.998 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 133.5345ms
+2023-02-13 03:49:38.071 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - -
+2023-02-13 03:49:39.071 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1000.4720ms
+2023-02-13 03:49:41.080 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/api/applicationservices application/x-www-form-urlencoded 61
+2023-02-13 03:49:41.137 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/applicationservices
+Accept: */*
+Connection: keep-alive
+Host: localhost:7178
+User-Agent: PostmanRuntime/7.30.1
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 61
+Postman-Token: [Redacted]
+2023-02-13 03:49:41.163 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-02-13 03:49:41.261 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ApplicationServicesController.GetAuthorizeDefinitionEndpoints (ETicaretAPI.API)'
+2023-02-13 03:49:41.379 +03:00 [INF] Route matched with {action = "GetAuthorizeDefinitionEndpoints", controller = "ApplicationServices"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAuthorizeDefinitionEndpoints() on controller ETicaretAPI.API.Controllers.ApplicationServicesController (ETicaretAPI.API).
+2023-02-13 03:49:44.765 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ETicaretAPI.Application.DTOs.Configuration.Menu, ETicaretAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-02-13 03:49:44.810 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-13 03:49:44.843 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ApplicationServicesController.GetAuthorizeDefinitionEndpoints (ETicaretAPI.API) in 3411.9379ms
+2023-02-13 03:49:44.864 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ApplicationServicesController.GetAuthorizeDefinitionEndpoints (ETicaretAPI.API)'
+2023-02-13 03:49:44.884 +03:00 [INF] ResponseBody: [{"name":"Products","actions":[{"actionType":"Writing","httpType":"POST","definition":"Create Product"},{"actionType":"Updating","httpType":"PUT","definition":"Update Product"},{"actionType":"Deleting","httpType":"DELETE","definition":"Delete Product"}]}]
+2023-02-13 03:49:44.914 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/api/applicationservices application/x-www-form-urlencoded 61 - 200 - application/json;+charset=utf-8 3832.1365ms
+2023-02-13 21:46:48.864 +03:00 [INF] Executed DbCommand (90ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-13 21:46:48.996 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-13 21:46:49.020 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-02-13 21:46:49.052 +03:00 [INF] Applying migration '20230213184615_mig2'.
+2023-02-13 21:46:49.242 +03:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Menuus" (
+    "Id" uuid NOT NULL,
+    "Name" text NOT NULL,
+    "CreatedDate" timestamp with time zone NOT NULL,
+    "UpdatedDate" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_Menuus" PRIMARY KEY ("Id")
+);
+2023-02-13 21:46:49.260 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Endpoints" (
+    "Id" uuid NOT NULL,
+    "MenuuId" uuid NOT NULL,
+    "ActionType" text NOT NULL,
+    "HttpType" text NOT NULL,
+    "Definition" text NOT NULL,
+    "EndpointCode" text NOT NULL,
+    "CreatedDate" timestamp with time zone NOT NULL,
+    "UpdatedDate" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_Endpoints" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_Endpoints_Menuus_MenuuId" FOREIGN KEY ("MenuuId") REFERENCES "Menuus" ("Id") ON DELETE CASCADE
+);
+2023-02-13 21:46:49.271 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AppRoleEndpoint" (
+    "AppRolesId" text NOT NULL,
+    "EndpointsId" uuid NOT NULL,
+    CONSTRAINT "PK_AppRoleEndpoint" PRIMARY KEY ("AppRolesId", "EndpointsId"),
+    CONSTRAINT "FK_AppRoleEndpoint_AspNetRoles_AppRolesId" FOREIGN KEY ("AppRolesId") REFERENCES "AspNetRoles" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_AppRoleEndpoint_Endpoints_EndpointsId" FOREIGN KEY ("EndpointsId") REFERENCES "Endpoints" ("Id") ON DELETE CASCADE
+);
+2023-02-13 21:46:49.276 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AppRoleEndpoint_EndpointsId" ON "AppRoleEndpoint" ("EndpointsId");
+2023-02-13 21:46:49.281 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Endpoints_MenuuId" ON "Endpoints" ("MenuuId");
+2023-02-13 21:46:49.282 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230213184615_mig2', '7.0.2');
+2023-02-15 19:21:53.507 +03:00 [INF] User profile is available. Using 'C:\Users\Tuba\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-15 19:21:55.929 +03:00 [INF] Now listening on: http://localhost:7178
+2023-02-15 19:21:55.953 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-15 19:21:55.955 +03:00 [INF] Hosting environment: Development
+2023-02-15 19:21:55.956 +03:00 [INF] Content root path: C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\
+2023-02-15 19:21:59.158 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/index.html - -
+2023-02-15 19:22:00.954 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/index.html - - - 200 - text/html;charset=utf-8 1806.4987ms
+2023-02-15 19:22:01.038 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - -
+2023-02-15 19:22:01.072 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 33.7653ms
+2023-02-15 19:22:01.084 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_vs/browserLink - -
+2023-02-15 19:22:01.284 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 200.0341ms
+2023-02-15 19:22:01.553 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - -
+2023-02-15 19:22:02.649 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1095.7143ms
+2023-02-18 03:47:52.290 +03:00 [WRN] The foreign key property 'Basket.AppUserId1' was created in shadow state because a conflicting property with the simple name 'AppUserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2023-02-18 03:47:53.545 +03:00 [WRN] The foreign key property 'Basket.AppUserId1' was created in shadow state because a conflicting property with the simple name 'AppUserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2023-02-18 03:49:03.228 +03:00 [INF] Executed DbCommand (183ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-18 03:49:03.474 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-18 03:49:03.533 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-02-18 03:49:03.626 +03:00 [INF] Applying migration '20230218004753_mig3'.
+2023-02-18 03:49:03.986 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Menuus" RENAME COLUMN "Name" TO "MenuName";
+2023-02-18 03:49:04.157 +03:00 [INF] Executed DbCommand (171ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Baskets" (
+    "Id" uuid NOT NULL,
+    "AppUserId" uuid NOT NULL,
+    "AppUserId1" text NOT NULL,
+    "CreatedDate" timestamp with time zone NOT NULL,
+    "UpdatedDate" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_Baskets" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_Baskets_AspNetUsers_AppUserId1" FOREIGN KEY ("AppUserId1") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2023-02-18 03:49:04.231 +03:00 [INF] Executed DbCommand (73ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "BasketItems" (
+    "Id" uuid NOT NULL,
+    "Quantity" integer NOT NULL,
+    "BasketId" uuid NOT NULL,
+    "ProductId" uuid NOT NULL,
+    "CreatedDate" timestamp with time zone NOT NULL,
+    "UpdatedDate" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_BasketItems" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_BasketItems_Baskets_BasketId" FOREIGN KEY ("BasketId") REFERENCES "Baskets" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_BasketItems_Products_ProductId" FOREIGN KEY ("ProductId") REFERENCES "Products" ("Id") ON DELETE CASCADE
+);
+2023-02-18 03:49:04.252 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_BasketItems_BasketId" ON "BasketItems" ("BasketId");
+2023-02-18 03:49:04.290 +03:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_BasketItems_ProductId" ON "BasketItems" ("ProductId");
+2023-02-18 03:49:04.306 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Baskets_AppUserId1" ON "Baskets" ("AppUserId1");
+2023-02-18 03:49:04.311 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230218004753_mig3', '7.0.2');
+2023-02-18 03:51:04.371 +03:00 [INF] Executed DbCommand (101ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-18 03:51:04.551 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-02-18 03:51:34.161 +03:00 [INF] Executed DbCommand (106ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-18 03:51:34.340 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-18 03:51:34.365 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-02-18 03:51:34.405 +03:00 [INF] Applying migration '20230218005120_mig10'.
+2023-02-18 03:51:34.595 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Baskets" DROP CONSTRAINT "FK_Baskets_AspNetUsers_AppUserId1";
+2023-02-18 03:51:34.598 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP INDEX "IX_Baskets_AppUserId1";
+2023-02-18 03:51:34.601 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Baskets" DROP COLUMN "AppUserId1";
+2023-02-18 03:51:34.622 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Baskets" ALTER COLUMN "AppUserId" TYPE text;
+2023-02-18 03:51:34.625 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Baskets_AppUserId" ON "Baskets" ("AppUserId");
+2023-02-18 03:51:34.644 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Baskets" ADD CONSTRAINT "FK_Baskets_AspNetUsers_AppUserId" FOREIGN KEY ("AppUserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE;
+2023-02-18 03:51:34.645 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230218005120_mig10', '7.0.2');
+2023-02-19 15:19:53.478 +03:00 [INF] Executed DbCommand (128ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-19 15:19:53.735 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-19 15:19:53.756 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-02-19 15:19:53.807 +03:00 [INF] Applying migration '20230219121927_mig'.
+2023-02-19 15:19:54.067 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Orders" ADD "BasketId" uuid NOT NULL DEFAULT '00000000-0000-0000-0000-000000000000';
+2023-02-19 15:19:54.068 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Baskets" ADD "OrderId" uuid NOT NULL DEFAULT '00000000-0000-0000-0000-000000000000';
+2023-02-19 15:19:54.084 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Baskets_OrderId" ON "Baskets" ("OrderId");
+2023-02-19 15:19:54.112 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Baskets" ADD CONSTRAINT "FK_Baskets_Orders_OrderId" FOREIGN KEY ("OrderId") REFERENCES "Orders" ("Id") ON DELETE CASCADE;
+2023-02-19 15:19:54.114 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230219121927_mig', '7.0.2');
+2023-02-19 15:24:11.684 +03:00 [INF] Executed DbCommand (130ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-19 15:24:11.889 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-19 15:24:11.914 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-02-19 15:24:11.972 +03:00 [INF] Applying migration '20230219122358_mig4'.
+2023-02-19 15:24:12.372 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Baskets" DROP CONSTRAINT "FK_Baskets_Orders_OrderId";
+2023-02-19 15:24:12.375 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP INDEX "IX_Baskets_OrderId";
+2023-02-19 15:24:12.376 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Baskets" DROP COLUMN "OrderId";
+2023-02-19 15:24:12.385 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Orders_BasketId" ON "Orders" ("BasketId");
+2023-02-19 15:24:12.408 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Orders" ADD CONSTRAINT "FK_Orders_Baskets_BasketId" FOREIGN KEY ("BasketId") REFERENCES "Baskets" ("Id") ON DELETE CASCADE;
+2023-02-19 15:24:12.408 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230219122358_mig4', '7.0.2');
+2023-02-19 15:29:58.158 +03:00 [INF] Executed DbCommand (84ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-19 15:29:58.285 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-19 15:29:58.304 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-02-19 15:29:58.335 +03:00 [INF] No migrations were applied. The database is already up to date.
+2023-02-19 15:30:41.758 +03:00 [INF] Executed DbCommand (84ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-19 15:30:41.888 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-19 15:30:41.907 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-02-19 15:30:41.936 +03:00 [INF] Applying migration '20230219123033_mig5'.
+2023-02-19 15:30:42.072 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Orders" DROP CONSTRAINT "FK_Orders_Baskets_BasketId";
+2023-02-19 15:30:42.074 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP INDEX "IX_Orders_BasketId";
+2023-02-19 15:30:42.075 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Orders" DROP COLUMN "BasketId";
+2023-02-19 15:30:42.084 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Orders" ADD CONSTRAINT "FK_Orders_Baskets_Id" FOREIGN KEY ("Id") REFERENCES "Baskets" ("Id") ON DELETE CASCADE;
+2023-02-19 15:30:42.086 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230219123033_mig5', '7.0.2');
+2023-02-19 15:32:34.439 +03:00 [INF] Executed DbCommand (125ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-19 15:32:34.642 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-19 15:32:34.676 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-02-19 15:32:34.750 +03:00 [INF] Applying migration '20230219123219_mig6'.
+2023-02-19 15:32:34.968 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230219123219_mig6', '7.0.2');
+2023-02-19 19:16:15.640 +03:00 [INF] User profile is available. Using 'C:\Users\Tuba\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-19 19:16:16.390 +03:00 [INF] Now listening on: http://localhost:7178
+2023-02-19 19:16:16.419 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-19 19:16:16.443 +03:00 [INF] Hosting environment: Development
+2023-02-19 19:16:16.444 +03:00 [INF] Content root path: C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\
+2023-02-19 19:16:17.576 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/index.html - -
+2023-02-19 19:16:18.978 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/index.html - - - 200 - text/html;charset=utf-8 1405.6166ms
+2023-02-19 19:16:19.173 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_vs/browserLink - -
+2023-02-19 19:16:19.174 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - -
+2023-02-19 19:16:19.271 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 97.2127ms
+2023-02-19 19:16:19.411 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 238.4351ms
+2023-02-19 19:16:19.639 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - -
+2023-02-19 19:16:20.430 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 791.0427ms
+2023-02-20 16:58:06.393 +03:00 [INF] Executed DbCommand (85ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-20 16:58:06.531 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-20 16:58:06.551 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-02-20 16:58:06.584 +03:00 [INF] Applying migration '20230220135751_mig7'.
+2023-02-20 16:58:06.777 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Orders" DROP CONSTRAINT "FK_Orders_Customers_CustomerId";
+2023-02-20 16:58:06.782 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Orders" ALTER COLUMN "CustomerId" DROP NOT NULL;
+2023-02-20 16:58:06.811 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "CompletedOrder" (
+    "Id" uuid NOT NULL,
+    "OrderId" uuid NOT NULL,
+    "CreatedDate" timestamp with time zone NOT NULL,
+    "UpdatedDate" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_CompletedOrder" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_CompletedOrder_Orders_OrderId" FOREIGN KEY ("OrderId") REFERENCES "Orders" ("Id") ON DELETE CASCADE
+);
+2023-02-20 16:58:06.815 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_CompletedOrder_OrderId" ON "CompletedOrder" ("OrderId");
+2023-02-20 16:58:06.828 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Orders" ADD CONSTRAINT "FK_Orders_Customers_CustomerId" FOREIGN KEY ("CustomerId") REFERENCES "Customers" ("Id");
+2023-02-20 16:58:06.829 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230220135751_mig7', '7.0.2');
+2023-02-20 17:02:23.066 +03:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-20 17:02:23.285 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-20 17:02:23.316 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-02-20 17:02:23.367 +03:00 [INF] No migrations were applied. The database is already up to date.
+2023-02-20 17:02:44.476 +03:00 [INF] Executed DbCommand (107ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-20 17:02:44.800 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-20 17:02:44.832 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-02-20 17:02:44.877 +03:00 [INF] Applying migration '20230220140232_mig8'.
+2023-02-20 17:02:45.141 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE "OrderProduct";
+2023-02-20 17:02:45.143 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230220140232_mig8', '7.0.2');
+2023-02-20 17:09:13.474 +03:00 [INF] Executed DbCommand (112ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-20 17:09:13.630 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-20 17:09:13.651 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-02-20 17:09:13.685 +03:00 [INF] Applying migration '20230220140840_mig1'.
+2023-02-20 17:09:13.968 +03:00 [ERR] Failed executing DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetRoles" (
+    "Id" text NOT NULL,
+    "Name" character varying(256) NULL,
+    "NormalizedName" character varying(256) NULL,
+    "ConcurrencyStamp" text NULL,
+    CONSTRAINT "PK_AspNetRoles" PRIMARY KEY ("Id")
+);
+2023-02-20 17:11:44.831 +03:00 [INF] Executed DbCommand (82ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-20 17:11:44.964 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-20 17:11:44.984 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-02-20 17:11:45.016 +03:00 [INF] Applying migration '20230220140840_mig1'.
+2023-02-20 17:11:45.213 +03:00 [ERR] Failed executing DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetRoles" (
+    "Id" text NOT NULL,
+    "Name" character varying(256) NULL,
+    "NormalizedName" character varying(256) NULL,
+    "ConcurrencyStamp" text NULL,
+    CONSTRAINT "PK_AspNetRoles" PRIMARY KEY ("Id")
+);
+2023-02-20 18:05:49.511 +03:00 [INF] User profile is available. Using 'C:\Users\Tuba\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-20 18:05:50.828 +03:00 [INF] Now listening on: http://localhost:7178
+2023-02-20 18:05:50.914 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-20 18:05:50.946 +03:00 [INF] Hosting environment: Development
+2023-02-20 18:05:50.959 +03:00 [INF] Content root path: C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\
+2023-02-20 18:05:52.581 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/index.html - -
+2023-02-20 18:05:54.451 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/index.html - - - 200 - text/html;charset=utf-8 1872.5793ms
+2023-02-20 18:05:54.547 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - -
+2023-02-20 18:05:54.560 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 12.5120ms
+2023-02-20 18:05:54.571 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_vs/browserLink - -
+2023-02-20 18:05:54.862 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 290.8617ms
+2023-02-20 18:05:55.126 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - -
+2023-02-20 18:05:55.910 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 783.2208ms
+2023-02-20 18:11:23.850 +03:00 [INF] Executed DbCommand (105ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-20 18:11:24.024 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-20 18:11:24.053 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-02-20 18:11:24.113 +03:00 [INF] Applying migration '20230220140840_mig1'.
+2023-02-20 18:11:24.409 +03:00 [ERR] Failed executing DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetRoles" (
+    "Id" text NOT NULL,
+    "Name" character varying(256) NULL,
+    "NormalizedName" character varying(256) NULL,
+    "ConcurrencyStamp" text NULL,
+    CONSTRAINT "PK_AspNetRoles" PRIMARY KEY ("Id")
+);
+2023-02-20 18:22:53.559 +03:00 [INF] Executed DbCommand (120ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-20 18:22:53.727 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-20 18:22:53.752 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-02-20 18:22:53.793 +03:00 [INF] Applying migration '20230220140840_mig1'.
+2023-02-20 18:22:54.092 +03:00 [ERR] Failed executing DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetRoles" (
+    "Id" text NOT NULL,
+    "Name" character varying(256) NULL,
+    "NormalizedName" character varying(256) NULL,
+    "ConcurrencyStamp" text NULL,
+    CONSTRAINT "PK_AspNetRoles" PRIMARY KEY ("Id")
+);
+2023-02-21 01:09:45.585 +03:00 [INF] Executed DbCommand (244ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-21 01:09:45.879 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2023-02-21 01:09:45.911 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-02-21 01:09:45.956 +03:00 [INF] Applying migration '20230220140840_mig1'.
+2023-02-21 01:09:46.393 +03:00 [ERR] Failed executing DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetRoles" (
+    "Id" text NOT NULL,
+    "Name" character varying(256) NULL,
+    "NormalizedName" character varying(256) NULL,
+    "ConcurrencyStamp" text NULL,
+    CONSTRAINT "PK_AspNetRoles" PRIMARY KEY ("Id")
+);
+2023-02-21 03:54:35.229 +03:00 [INF] User profile is available. Using 'C:\Users\Tuba\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-21 03:54:35.876 +03:00 [INF] Now listening on: http://localhost:7178
+2023-02-21 03:54:35.936 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-21 03:54:35.962 +03:00 [INF] Hosting environment: Development
+2023-02-21 03:54:35.966 +03:00 [INF] Content root path: C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\
+2023-02-21 03:54:36.555 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/index.html - -
+2023-02-21 03:54:38.004 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/index.html - - - 200 - text/html;charset=utf-8 1455.5336ms
+2023-02-21 03:54:38.101 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - -
+2023-02-21 03:54:38.234 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 131.9283ms
+2023-02-21 03:54:38.579 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_vs/browserLink - -
+2023-02-21 03:54:38.666 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 86.3026ms
+2023-02-21 03:54:38.895 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - -
+2023-02-21 03:54:39.719 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 824.6697ms
+2023-02-21 03:56:57.791 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7178/api/auth/login application/json 99
+2023-02-21 03:56:57.858 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7178
+User-Agent: PostmanRuntime/7.31.0
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Content-Type: application/json
+Content-Length: 99
+Postman-Token: [Redacted]
+2023-02-21 03:56:57.884 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-02-21 03:56:57.941 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-02-21 03:56:59.123 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandRequest) on controller ETicaretAPI.API.Controllers.AuthController (ETicaretAPI.API).
+2023-02-21 03:56:59.169 +03:00 [INF] RequestBody: {
+    
+    "userNameOrEmail":"tuba",
+    "password":"1234",
+    "accessTokenLifeTime":"15"
+
+}
+2023-02-21 03:57:02.933 +03:00 [INF] Executed DbCommand (41ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-02-21 03:57:03.052 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-02-21 03:57:03.956 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API) in 4814.9404ms
+2023-02-21 03:57:03.969 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-02-21 03:57:04.410 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+ETicaretAPI.Application.Exceptions.NotFoundUserException: Kullanıcı Bilgileri Hatalı!!!
+   at ETicaretAPI.Persistence.Services.AuthService.LoginAsync(String usernameoremail, String password, Int32 accessTokenLifeTime) in C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Infrastructure\ETicaretAPI.Persistence\Services\AuthService.cs:line 95
+   at ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandHandler.Handle(LoginUserCommandRequest request, CancellationToken cancellationToken) in C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Core\ETicaretAPI.Application\Features\Commands\AppUser\LoginUser\LoginUserCommandHandler.cs:line 31
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at ETicaretAPI.API.Controllers.AuthController.Login(LoginUserCommandRequest loginUserCommandRequest) in C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\Controllers\AuthController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<Main>b__0_4>d.MoveNext() in C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\Program.cs:line 144
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-02-21 03:57:05.038 +03:00 [ERR] Kullanıcı Bilgileri Hatalı!!!
+2023-02-21 03:57:05.166 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7178/api/auth/login application/json 99 - 500 - application/json 7375.6490ms
+2023-02-21 03:57:22.545 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7178/api/auth/login application/json 100
+2023-02-21 03:57:22.556 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7178
+User-Agent: PostmanRuntime/7.31.0
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Content-Type: application/json
+Content-Length: 100
+Postman-Token: [Redacted]
+2023-02-21 03:57:22.574 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-02-21 03:57:22.577 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandRequest) on controller ETicaretAPI.API.Controllers.AuthController (ETicaretAPI.API).
+2023-02-21 03:57:22.582 +03:00 [INF] RequestBody: {
+    
+    "userNameOrEmail":"tuba",
+    "password":"12345",
+    "accessTokenLifeTime":"15"
+
+}
+2023-02-21 03:57:22.670 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-02-21 03:57:22.688 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-02-21 03:57:23.073 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API) in 492.252ms
+2023-02-21 03:57:23.076 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-02-21 03:57:23.344 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+ETicaretAPI.Application.Exceptions.NotFoundUserException: Kullanıcı Bilgileri Hatalı!!!
+   at ETicaretAPI.Persistence.Services.AuthService.LoginAsync(String usernameoremail, String password, Int32 accessTokenLifeTime) in C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Infrastructure\ETicaretAPI.Persistence\Services\AuthService.cs:line 95
+   at ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandHandler.Handle(LoginUserCommandRequest request, CancellationToken cancellationToken) in C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Core\ETicaretAPI.Application\Features\Commands\AppUser\LoginUser\LoginUserCommandHandler.cs:line 31
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at ETicaretAPI.API.Controllers.AuthController.Login(LoginUserCommandRequest loginUserCommandRequest) in C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\Controllers\AuthController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<Main>b__0_4>d.MoveNext() in C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\Program.cs:line 144
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-02-21 03:57:23.381 +03:00 [ERR] Kullanıcı Bilgileri Hatalı!!!
+2023-02-21 03:57:23.383 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7178/api/auth/login application/json 100 - 500 - application/json 838.2404ms
+2023-02-21 03:57:36.462 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7178/api/auth/login application/json 98
+2023-02-21 03:57:36.464 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7178
+User-Agent: PostmanRuntime/7.31.0
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Content-Type: application/json
+Content-Length: 98
+Postman-Token: [Redacted]
+2023-02-21 03:57:36.473 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-02-21 03:57:36.486 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandRequest) on controller ETicaretAPI.API.Controllers.AuthController (ETicaretAPI.API).
+2023-02-21 03:57:36.491 +03:00 [INF] RequestBody: {
+    
+    "userNameOrEmail":"tuba",
+    "password":"123",
+    "accessTokenLifeTime":"15"
+
+}
+2023-02-21 03:57:36.519 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-02-21 03:57:36.529 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-02-21 03:57:36.891 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API) in 401.3256ms
+2023-02-21 03:57:36.896 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-02-21 03:57:37.224 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+ETicaretAPI.Application.Exceptions.NotFoundUserException: Kullanıcı Bilgileri Hatalı!!!
+   at ETicaretAPI.Persistence.Services.AuthService.LoginAsync(String usernameoremail, String password, Int32 accessTokenLifeTime) in C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Infrastructure\ETicaretAPI.Persistence\Services\AuthService.cs:line 95
+   at ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandHandler.Handle(LoginUserCommandRequest request, CancellationToken cancellationToken) in C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Core\ETicaretAPI.Application\Features\Commands\AppUser\LoginUser\LoginUserCommandHandler.cs:line 31
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at ETicaretAPI.API.Controllers.AuthController.Login(LoginUserCommandRequest loginUserCommandRequest) in C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\Controllers\AuthController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<Main>b__0_4>d.MoveNext() in C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\Program.cs:line 144
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-02-21 03:57:37.246 +03:00 [ERR] Kullanıcı Bilgileri Hatalı!!!
+2023-02-21 03:57:37.248 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7178/api/auth/login application/json 98 - 500 - application/json 786.2520ms
+2023-02-21 03:57:47.327 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7178/api/auth/login application/json 101
+2023-02-21 03:57:47.330 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7178
+User-Agent: PostmanRuntime/7.31.0
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Content-Type: application/json
+Content-Length: 101
+Postman-Token: [Redacted]
+2023-02-21 03:57:47.334 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-02-21 03:57:47.337 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandRequest) on controller ETicaretAPI.API.Controllers.AuthController (ETicaretAPI.API).
+2023-02-21 03:57:47.342 +03:00 [INF] RequestBody: {
+    
+    "userNameOrEmail":"eylul",
+    "password":"12345",
+    "accessTokenLifeTime":"15"
+
+}
+2023-02-21 03:57:47.348 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-02-21 03:57:47.357 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-02-21 03:57:47.679 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API) in 337.8261ms
+2023-02-21 03:57:47.682 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-02-21 03:57:47.925 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+ETicaretAPI.Application.Exceptions.NotFoundUserException: Kullanıcı Bilgileri Hatalı!!!
+   at ETicaretAPI.Persistence.Services.AuthService.LoginAsync(String usernameoremail, String password, Int32 accessTokenLifeTime) in C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Infrastructure\ETicaretAPI.Persistence\Services\AuthService.cs:line 95
+   at ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandHandler.Handle(LoginUserCommandRequest request, CancellationToken cancellationToken) in C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Core\ETicaretAPI.Application\Features\Commands\AppUser\LoginUser\LoginUserCommandHandler.cs:line 31
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at ETicaretAPI.API.Controllers.AuthController.Login(LoginUserCommandRequest loginUserCommandRequest) in C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\Controllers\AuthController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<Main>b__0_4>d.MoveNext() in C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\Program.cs:line 144
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-02-21 03:57:47.953 +03:00 [ERR] Kullanıcı Bilgileri Hatalı!!!
+2023-02-21 03:57:47.955 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7178/api/auth/login application/json 101 - 500 - application/json 627.8756ms
+2023-02-21 04:01:30.979 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7178/api/users/CreateUser application/json 148
+2023-02-21 04:01:30.988 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/users/CreateUser
+Accept: */*
+Connection: keep-alive
+Host: localhost:7178
+User-Agent: PostmanRuntime/7.31.0
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Content-Type: application/json
+Content-Length: 148
+UserId: [Redacted]
+Postman-Token: [Redacted]
+2023-02-21 04:01:30.991 +03:00 [INF] RequestBody: 
+2023-02-21 04:01:30.995 +03:00 [INF] Response:
+StatusCode: 404
+2023-02-21 04:01:30.998 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7178/api/users/CreateUser application/json 148 - 404 0 - 32.2100ms
+2023-02-21 04:02:07.231 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7178/api/Users application/json 121
+2023-02-21 04:02:07.233 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Users
+Accept: */*
+Connection: keep-alive
+Host: localhost:7178
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 121
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2023-02-21 04:02:07.265 +03:00 [INF] CORS policy execution failed.
+2023-02-21 04:02:07.274 +03:00 [INF] Request origin http://localhost:7178 does not have permission to access the resource.
+2023-02-21 04:02:08.201 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-02-21 04:02:08.233 +03:00 [INF] AuthenticationScheme: Admin was challenged.
+2023-02-21 04:02:08.235 +03:00 [INF] RequestBody: 
+2023-02-21 04:02:08.240 +03:00 [INF] Response:
+StatusCode: 401
+WWW-Authenticate: [Redacted]
+2023-02-21 04:02:08.243 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7178/api/Users application/json 121 - 401 0 - 1012.3115ms
+2023-02-21 04:02:26.916 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7178/api/Users application/json 122
+2023-02-21 04:02:26.921 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Users
+Accept: */*
+Connection: keep-alive
+Host: localhost:7178
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 122
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2023-02-21 04:02:26.924 +03:00 [INF] CORS policy execution failed.
+2023-02-21 04:02:26.926 +03:00 [INF] Request origin http://localhost:7178 does not have permission to access the resource.
+2023-02-21 04:02:26.930 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-02-21 04:02:26.933 +03:00 [INF] AuthenticationScheme: Admin was challenged.
+2023-02-21 04:02:26.936 +03:00 [INF] RequestBody: 
+2023-02-21 04:02:26.939 +03:00 [INF] Response:
+StatusCode: 401
+WWW-Authenticate: [Redacted]
+2023-02-21 04:02:26.942 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7178/api/Users application/json 122 - 401 0 - 25.1777ms
+2023-02-21 04:03:29.254 +03:00 [INF] User profile is available. Using 'C:\Users\Tuba\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-21 04:03:30.515 +03:00 [INF] Now listening on: http://localhost:7178
+2023-02-21 04:03:30.551 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-21 04:03:30.554 +03:00 [INF] Hosting environment: Development
+2023-02-21 04:03:30.556 +03:00 [INF] Content root path: C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\
+2023-02-21 04:03:31.493 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/index.html - -
+2023-02-21 04:03:32.994 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/index.html - - - 200 - text/html;charset=utf-8 1513.5451ms
+2023-02-21 04:03:33.066 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - -
+2023-02-21 04:03:33.100 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 34.7830ms
+2023-02-21 04:03:33.114 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/_vs/browserLink - -
+2023-02-21 04:03:33.202 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 87.3715ms
+2023-02-21 04:03:33.497 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - -
+2023-02-21 04:03:34.704 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:7178/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1207.0988ms
+2023-02-21 04:04:32.113 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7178/api/Products application/json 50
+2023-02-21 04:04:32.155 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Products
+Accept: */*
+Connection: keep-alive
+Host: localhost:7178
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 50
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2023-02-21 04:04:32.169 +03:00 [INF] CORS policy execution failed.
+2023-02-21 04:04:32.170 +03:00 [INF] Request origin http://localhost:7178 does not have permission to access the resource.
+2023-02-21 04:04:32.180 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-02-21 04:04:32.425 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-02-21 04:04:32.479 +03:00 [INF] AuthenticationScheme: Admin was challenged.
+2023-02-21 04:04:32.500 +03:00 [INF] RequestBody: 
+2023-02-21 04:04:32.521 +03:00 [INF] Response:
+StatusCode: 401
+WWW-Authenticate: [Redacted]
+2023-02-21 04:04:32.537 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7178/api/Products application/json 50 - 401 0 - 423.9370ms
+2023-02-21 04:04:59.425 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7178/api/Users application/json 121
+2023-02-21 04:04:59.433 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Users
+Accept: */*
+Connection: keep-alive
+Host: localhost:7178
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 121
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2023-02-21 04:04:59.446 +03:00 [INF] CORS policy execution failed.
+2023-02-21 04:04:59.448 +03:00 [INF] Request origin http://localhost:7178 does not have permission to access the resource.
+2023-02-21 04:04:59.475 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.UsersController.CreateUser (ETicaretAPI.API)'
+2023-02-21 04:05:00.115 +03:00 [INF] Route matched with {action = "CreateUser", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(ETicaretAPI.Application.Features.Commands.AppUser.CreateUser.CreateUserCommandRequest) on controller ETicaretAPI.API.Controllers.UsersController (ETicaretAPI.API).
+2023-02-21 04:05:00.147 +03:00 [INF] RequestBody: {
+  "nameSurname": "tuba",
+  "userName": "tuba",
+  "email": "tuba",
+  "password": "12345",
+  "confirmPassword": "12345"
+}
+2023-02-21 04:05:14.855 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-02-21 04:05:15.381 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[@p0='?', @p1='?' (DbType = Int32), @p2='?', @p3='?', @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTime), @p7='?', @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?' (DbType = Boolean), @p17='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NameSurname", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "RefreshToken", "RefreshTokenEndDate", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+2023-02-21 04:05:29.547 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.AppUser.CreateUser.CreateUserCommandResponse'.
+2023-02-21 04:05:31.785 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-21 04:05:31.806 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.UsersController.CreateUser (ETicaretAPI.API) in 31675.8135ms
+2023-02-21 04:05:31.811 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.UsersController.CreateUser (ETicaretAPI.API)'
+2023-02-21 04:05:31.816 +03:00 [INF] ResponseBody: {"succeded":true,"message":"Kullanıcı oluşturuldu"}
+2023-02-21 04:05:31.860 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7178/api/Users application/json 121 - 200 - application/json;+charset=utf-8 32435.0279ms
+2023-02-21 04:05:55.547 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7178/api/Auth/Login application/json 54
+2023-02-21 04:05:55.550 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7178
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 54
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2023-02-21 04:05:55.554 +03:00 [INF] CORS policy execution failed.
+2023-02-21 04:05:55.555 +03:00 [INF] Request origin http://localhost:7178 does not have permission to access the resource.
+2023-02-21 04:05:55.558 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-02-21 04:05:55.581 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandRequest) on controller ETicaretAPI.API.Controllers.AuthController (ETicaretAPI.API).
+2023-02-21 04:05:55.589 +03:00 [INF] RequestBody: {
+  "userNameOrEmail": "tuba",
+  "password": "12345"
+}
+2023-02-21 04:05:55.727 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-02-21 04:05:56.355 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-02-21 04:05:56.425 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2023-02-21 04:06:03.330 +03:00 [INF] Giriş işlemi yapıldı...
+2023-02-21 04:06:10.046 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandResponse'.
+2023-02-21 04:06:13.690 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-21 04:06:13.694 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API) in 18105.6532ms
+2023-02-21 04:06:13.696 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-02-21 04:06:13.699 +03:00 [INF] ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidHViYSIsIm5iZiI6MTY3Njk0MTU1NSwiZXhwIjoxNjc2OTQyNDU1fQ.bL03CvNeI5hGmhfZZfz5l9_tuf3K6R0kX726DvoFwLU","expiration":"2023-02-21T01:20:55.81272Z","refreshToken":"0oazjs0h9LCiUhNu5I1mJ4Abx7KGxr8efsixXy31wn0="}}
+2023-02-21 04:06:13.704 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7178/api/Auth/Login application/json 54 - 200 - application/json;+charset=utf-8 18156.4987ms
+2023-02-21 04:06:48.365 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7178/api/Products application/json 50
+2023-02-21 04:06:48.367 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Products
+Accept: */*
+Connection: keep-alive
+Host: localhost:7178
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 50
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2023-02-21 04:06:48.370 +03:00 [INF] CORS policy execution failed.
+2023-02-21 04:06:48.372 +03:00 [INF] Request origin http://localhost:7178 does not have permission to access the resource.
+2023-02-21 04:06:48.376 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-02-21 04:06:48.380 +03:00 [INF] AuthenticationScheme: Admin was challenged.
+2023-02-21 04:06:48.383 +03:00 [INF] RequestBody: 
+2023-02-21 04:06:48.387 +03:00 [INF] Response:
+StatusCode: 401
+WWW-Authenticate: [Redacted]
+2023-02-21 04:06:48.389 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7178/api/Products application/json 50 - 401 0 - 24.3004ms
+2023-02-21 04:06:52.096 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7178/api/Products application/json 50
+2023-02-21 04:06:52.099 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Products
+Accept: */*
+Connection: keep-alive
+Host: localhost:7178
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 50
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2023-02-21 04:06:52.102 +03:00 [INF] CORS policy execution failed.
+2023-02-21 04:06:52.103 +03:00 [INF] Request origin http://localhost:7178 does not have permission to access the resource.
+2023-02-21 04:06:52.108 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-02-21 04:06:52.111 +03:00 [INF] AuthenticationScheme: Admin was challenged.
+2023-02-21 04:06:52.113 +03:00 [INF] RequestBody: 
+2023-02-21 04:06:52.116 +03:00 [INF] Response:
+StatusCode: 401
+WWW-Authenticate: [Redacted]
+2023-02-21 04:06:52.119 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7178/api/Products application/json 50 - 401 0 - 22.6107ms
+2023-02-21 04:06:52.862 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7178/api/Products application/json 50
+2023-02-21 04:06:52.864 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Products
+Accept: */*
+Connection: keep-alive
+Host: localhost:7178
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 50
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2023-02-21 04:06:52.867 +03:00 [INF] CORS policy execution failed.
+2023-02-21 04:06:52.869 +03:00 [INF] Request origin http://localhost:7178 does not have permission to access the resource.
+2023-02-21 04:06:52.871 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-02-21 04:06:52.873 +03:00 [INF] AuthenticationScheme: Admin was challenged.
+2023-02-21 04:06:52.875 +03:00 [INF] RequestBody: 
+2023-02-21 04:06:52.877 +03:00 [INF] Response:
+StatusCode: 401
+WWW-Authenticate: [Redacted]
+2023-02-21 04:06:52.880 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7178/api/Products application/json 50 - 401 0 - 17.4798ms
+2023-02-21 04:07:16.917 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7178/api/auth/login application/json 100
+2023-02-21 04:07:16.920 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7178
+User-Agent: PostmanRuntime/7.31.0
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Content-Type: application/json
+Content-Length: 100
+Postman-Token: [Redacted]
+2023-02-21 04:07:16.923 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-02-21 04:07:16.938 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandRequest) on controller ETicaretAPI.API.Controllers.AuthController (ETicaretAPI.API).
+2023-02-21 04:07:16.945 +03:00 [INF] RequestBody: {
+    
+    "userNameOrEmail":"tuba",
+    "password":"12345",
+    "accessTokenLifeTime":"15"
+
+}
+2023-02-21 04:07:16.975 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-02-21 04:07:17.011 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-02-21 04:07:17.021 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2023-02-21 04:07:22.626 +03:00 [INF] Giriş işlemi yapıldı...
+2023-02-21 04:07:22.630 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandResponse'.
+2023-02-21 04:07:22.633 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-02-21 04:07:22.638 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API) in 5693.628ms
+2023-02-21 04:07:22.643 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-02-21 04:07:22.647 +03:00 [INF] ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidHViYSIsIm5iZiI6MTY3Njk0MTYzNywiZXhwIjoxNjc2OTQyNTM3fQ.3lw6WK4RvU6B6rBvnd-wFM5isKXDROSST0UQxTqSZ_A","expiration":"2023-02-21T01:22:17.0008278Z","refreshToken":"vOetj8rRbLGZu6ZMzXO07rUY0oupE2OK2KuYrH7Ok/s="}}
+2023-02-21 04:07:22.656 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7178/api/auth/login application/json 100 - 200 - application/json;+charset=utf-8 5738.8375ms
+2023-02-21 04:08:43.192 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7178/api/products/createproduct application/json 54
+2023-02-21 04:08:43.200 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/products/createproduct
+Accept: */*
+Connection: keep-alive
+Host: localhost:7178
+User-Agent: PostmanRuntime/7.31.0
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Content-Type: application/json
+Content-Length: 54
+UserId: [Redacted]
+Postman-Token: [Redacted]
+2023-02-21 04:08:43.203 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2023-02-21 04:08:43.205 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2023-02-21 04:08:43.207 +03:00 [INF] RequestBody: 
+2023-02-21 04:08:43.209 +03:00 [INF] Response:
+StatusCode: 405
+Allow: DELETE, GET
+2023-02-21 04:08:43.211 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7178/api/products/createproduct application/json 54 - 405 0 - 20.6254ms
+2023-02-21 04:09:42.882 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:7178/api/Users/assign-role-user application/json 84
+2023-02-21 04:09:42.885 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Users/assign-role-user
+Accept: */*
+Connection: keep-alive
+Host: localhost:7178
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 84
+sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2023-02-21 04:09:42.896 +03:00 [INF] CORS policy execution failed.
+2023-02-21 04:09:42.899 +03:00 [INF] Request origin http://localhost:7178 does not have permission to access the resource.
+2023-02-21 04:09:42.902 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.UsersController.AssignRoleUser (ETicaretAPI.API)'
+2023-02-21 04:09:42.914 +03:00 [INF] Route matched with {action = "AssignRoleUser", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AssignRoleUser(ETicaretAPI.Application.Features.Commands.AppUser.AssignRoleToUser.AssignRoleToUserCommandRequest) on controller ETicaretAPI.API.Controllers.UsersController (ETicaretAPI.API).
+2023-02-21 04:09:42.920 +03:00 [INF] RequestBody: {
+  "userId": "0666a200-86d1-43db-9e62-e746e3a15451",
+  "roles": [
+    "admin"
+  ]
+}
+2023-02-21 04:09:42.936 +03:00 [INF] Rol atama işlemi yapıldı...
+2023-02-21 04:09:42.986 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__p_0
+LIMIT 1
+2023-02-21 04:09:43.321 +03:00 [INF] Executed DbCommand (35ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a0."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "AspNetRoles" AS a0 ON a."RoleId" = a0."Id"
+WHERE a."UserId" = @__userId_0
+2023-02-21 04:09:43.363 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-02-21 04:09:43.389 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2023-02-21 04:09:43.440 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2023-02-21 04:09:43.462 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2023-02-21 04:09:43.999 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.UsersController.AssignRoleUser (ETicaretAPI.API) in 1080.7866ms
+2023-02-21 04:09:44.003 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.UsersController.AssignRoleUser (ETicaretAPI.API)'
+2023-02-21 04:09:44.278 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Role ADMIN does not exist.
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.AddToRoleAsync(TUser user, String normalizedRoleName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRolesAsync(TUser user, IEnumerable`1 roles)
+   at ETicaretAPI.Persistence.Services.UserService.AssignRoleToUser(String[] roles, String userId) in C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Infrastructure\ETicaretAPI.Persistence\Services\UserService.cs:line 34
+   at ETicaretAPI.Application.Features.Commands.AppUser.AssignRoleToUser.AssignRoleToUserCommandHandler.Handle(AssignRoleToUserCommandRequest request, CancellationToken cancellationToken) in C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Core\ETicaretAPI.Application\Features\Commands\AppUser\AssignRoleToUser\AssignRoleToUserCommandHandler.cs:line 26
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at ETicaretAPI.API.Controllers.UsersController.AssignRoleUser(AssignRoleToUserCommandRequest assignRoleUserCommandRequest) in C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\Controllers\UsersController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<Main>b__0_4>d.MoveNext() in C:\Users\Tuba\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\Program.cs:line 144
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-02-21 04:09:44.460 +03:00 [ERR] Role ADMIN does not exist.
+2023-02-21 04:09:44.481 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:7178/api/Users/assign-role-user application/json 84 - 500 - application/json 1599.4980ms
